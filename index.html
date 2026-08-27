@@ -1,684 +1,110 @@
-<!DOCTYPE html>
-<html lang="ko" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>퍼스널 브랜딩 레포트 | Lyndsey.r</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        kakao: {
-                            yellow: '#FAE100', // 카카오 로고 시그니처 Yellow
-                            dark: '#191919',   // 메인 어두운 배경
-                            card: '#222222',   // 카드 배경
-                            border: '#333333'  // 테두리
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Noto Sans KR', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Google Fonts & Font Awesome -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background-color: #0d0d0d;
-            color: #f3f4f6;
-        }
-        .glass-card {
-            background: rgba(25, 25, 25, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-    </style>
-</head>
-<body class="antialiased selection:bg-kakao-yellow selection:text-black">
-
-    <!-- Header Banner / Navigation Bar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 glass-card transition-all duration-300 shadow-md border-b border-kakao-border">
+<!-- Section 5: Values & Future Vision (인과관계 및 성장 비전 강화) -->
+    <section id="future" class="py-24 bg-kakao-dark border-t border-kakao-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <!-- Logo & Brand Header -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-xl bg-kakao-yellow text-black flex items-center justify-center font-black text-xl shadow-lg">
-                        L
-                    </div>
-                    <div>
-                        <span class="text-lg font-extrabold tracking-tight text-white block leading-none">Lyndsey.r</span>
-                        <span class="text-xs text-kakao-yellow font-medium">스낵큐레이션파트</span>
-                    </div>
-                </a>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-300">
-                    <a href="#about" class="hover:text-kakao-yellow transition">소개</a>
-                    <a href="#experience" class="hover:text-kakao-yellow transition">근무 이력</a>
-                    <a href="#mbti" class="hover:text-kakao-yellow transition">성향 & 강점</a>
-                    <a href="#competencies" class="hover:text-kakao-yellow transition">핵심 역량</a>
-                    <a href="#casestudy" class="hover:text-kakao-yellow transition">강점 & 사례</a>
-                    <a href="#achievements" class="hover:text-kakao-yellow transition">주요 성과</a>
-                    <a href="#future" class="hover:text-kakao-yellow transition">성장 비전</a>
-                </div>
-
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="p-2 text-gray-300 hover:text-kakao-yellow focus:outline-none">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Drawer -->
-        <div id="mobile-menu" class="hidden md:hidden bg-kakao-dark border-b border-kakao-border px-4 pt-2 pb-6 space-y-3">
-            <a href="#about" class="block py-2 text-base font-medium text-gray-300 hover:text-kakao-yellow">소개</a>
-            <a href="#experience" class="block py-2 text-base font-medium text-gray-300 hover:text-kakao-yellow">근무 이력</a>
-            <a href="#mbti" class="block py-2 text-base font-medium text-gray-300 hover:text-kakao-yellow">성향 & 강점</a>
-            <a href="#competencies" class="block py-2 text-base font-medium text-gray-300 hover:text-kakao-yellow">핵심 역량</a>
-            <a href="#casestudy" class="block py-2 text-base font-medium text-gray-300 hover:text-kakao-yellow">강점 & 사례</a>
-            <a href="#achievements" class="block py-2 text-base font-medium text-gray-300 hover:text-kakao-yellow">주요 성과</a>
-            <a href="#future" class="block py-2 text-base font-medium text-gray-300 hover:text-kakao-yellow">성장 비전</a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="pt-36 pb-20 md:pt-44 md:pb-28 relative overflow-hidden bg-black text-white">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-kakao-yellow/10 rounded-full blur-[140px] pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center space-y-3 mb-12">
-                <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white uppercase">
-                    퍼스널 브랜딩 레포트
-                </h1>
-                <p class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-kakao-yellow tracking-wide">
-                    Lyndsey.r
-                </p>
-                <div class="w-24 h-1 bg-kakao-yellow mx-auto mt-4 rounded-full"></div>
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-kakao-yellow font-bold text-sm tracking-wider uppercase bg-kakao-card border border-kakao-border px-4 py-1.5 rounded-full shadow-sm">Values & Future</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
+                    직업 가치관 & <span class="text-kakao-yellow">앞으로의 성장 비전</span>
+                </h2>
+                <p class="text-gray-400 text-lg mt-3">단단한 라포와 현장 경험을 바탕으로, 조직 전체의 포용적 가치를 확장합니다.</p>
             </div>
 
-            <div class="grid lg:grid-cols-12 gap-12 items-center pt-6">
-                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+            <!-- Two Cards Side by Side -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Values Card (롤모델 & 가치관) -->
+                <div class="bg-kakao-card rounded-3xl p-8 sm:p-10 border border-kakao-border space-y-6 flex flex-col justify-between">
                     <div>
-                        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-kakao-yellow/10 border border-kakao-yellow/30 text-kakao-yellow text-sm font-semibold mb-6">
-                            <span class="w-2 h-2 rounded-full bg-kakao-yellow animate-pulse"></span>
-                            Linkage Lab | 스낵큐레이션파트 3년 차
-                        </span>
-                        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-                            직장예절에 대해 엄격한<br>
-                            <span class="text-kakao-yellow">스낵큐레이션파트의 훈장님</span>
-                        </h2>
-                    </div>
-
-                    <p class="text-lg sm:text-xl text-gray-300 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                        깊은 관심과 넓은 시야로 장애사원의 올바른 업무 태도와 직장 예절을 선도하며, 모두가 존중받는 조직 문화를 만들기 위해 노력했습니다.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-kakao-yellow hover:bg-yellow-400 text-black font-extrabold text-center shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
-                            프로필
-                        </a>
-                        <a href="#casestudy" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-kakao-card hover:bg-zinc-800 border border-kakao-border text-gray-200 font-semibold text-center transition duration-200">
-                            성과 사례 확인
-                        </a>
-                    </div>
-
-                    <div class="pt-8 border-t border-kakao-border grid grid-cols-3 gap-4 text-center lg:text-left">
-                        <div>
-                            <div class="text-2xl sm:text-3xl font-black text-white">3년+</div>
-                            <div class="text-xs sm:text-sm text-gray-400 mt-1">스낵 큐레이션 노하우</div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-kakao-yellow text-black flex items-center justify-center text-xl font-black shrink-0">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">롤모델 & 직업 가치관</h3>
+                                <p class="text-xs text-gray-400 mt-0.5">상호 존중과 신뢰 기반의 포용적 문화 지향</p>
+                            </div>
                         </div>
-                        <div>
-                            <div class="text-2xl sm:text-3xl font-black text-kakao-yellow">100%</div>
-                            <div class="text-xs sm:text-sm text-gray-400 mt-1">크루 직장 적응 완수</div>
-                        </div>
-                        <div>
-                            <div class="text-2xl sm:text-3xl font-black text-kakao-yellow">동메달</div>
-                            <div class="text-xs sm:text-sm text-gray-400 mt-1">기능경기대회 코칭 결실</div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="lg:col-span-5">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <div class="relative bg-kakao-card border border-kakao-border rounded-3xl p-8 shadow-2xl backdrop-blur-xl">
-                            <div class="flex items-center justify-between border-b border-kakao-border pb-6 mb-6">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-14 h-14 rounded-2xl bg-kakao-yellow text-black flex items-center justify-center font-black text-2xl shadow-inner">
-                                        <i class="fa-solid fa-user-check"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-lg font-bold text-white">멘토형 큐레이터</h3>
-                                        <p class="text-xs text-gray-400">포용적 직장 문화 리더</p>
-                                    </div>
-                                </div>
-                                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-kakao-yellow/20 text-kakao-yellow border border-kakao-yellow/30">
-                                    Active Mentor
-                                </span>
+                        <div class="space-y-4 text-gray-300 text-sm leading-relaxed">
+                            <div class="p-4 rounded-2xl bg-black/40 border border-kakao-border">
+                                <h4 class="text-white font-bold mb-1 flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-dot text-kakao-yellow text-xs"></i>
+                                    단 한 명도 소외되지 않는 포용적 환경 구축
+                                </h4>
+                                <p class="text-gray-400 text-xs pl-4">
+                                    다양한 사회적 약자와 함께 근무하며 얻은 깨달음을 바탕으로, 서로의 차이를 인정하고 존중할 때 비로소 조직의 건강한 성장이 이뤄진다는 가치관을 확립했습니다.
+                                </p>
                             </div>
 
-                            <div class="space-y-4">
-                                <div class="p-4 rounded-xl bg-black/60 border border-kakao-border flex items-start gap-3">
-                                    <div class="w-8 h-8 rounded-lg bg-kakao-yellow/20 text-kakao-yellow flex items-center justify-center shrink-0 mt-0.5">
-                                        <i class="fa-solid fa-hand-holding-heart text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-sm font-semibold text-white">크루 맞춤형 눈높이 소통</h4>
-                                        <p class="text-xs text-gray-400 mt-0.5">정서적 케어 및 신뢰 기반 멘토링</p>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 rounded-xl bg-black/60 border border-kakao-border flex items-start gap-3">
-                                    <div class="w-8 h-8 rounded-lg bg-kakao-yellow/20 text-kakao-yellow flex items-center justify-center shrink-0 mt-0.5">
-                                        <i class="fa-solid fa-clipboard-check text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-sm font-semibold text-white">체계적 근태 & 예절 지도</h4>
-                                        <p class="text-xs text-gray-400 mt-0.5">체크리스트 기반 올바른 직장 생활 정착</p>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 rounded-xl bg-black/60 border border-kakao-border flex items-start gap-3">
-                                    <div class="w-8 h-8 rounded-lg bg-kakao-yellow/20 text-kakao-yellow flex items-center justify-center shrink-0 mt-0.5">
-                                        <i class="fa-solid fa-cookie-bite text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-sm font-semibold text-white">신뢰 높은 스낵 환경 운영</h4>
-                                        <p class="text-xs text-gray-400 mt-0.5">3년 차의 세심함으로 임직원 만족도 제고</p>
-                                    </div>
-                                </div>
+                            <div class="p-4 rounded-2xl bg-black/40 border border-kakao-border">
+                                <h4 class="text-white font-bold mb-1 flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-dot text-kakao-yellow text-xs"></i>
+                                    동료의 성장을 통한 자아효능감 실현
+                                </h4>
+                                <p class="text-gray-400 text-xs pl-4">
+                                    크루가 직장 예절을 익히고 자립적인 구성원으로 자리 잡는 모습을 곁에서 도우며 가장 큰 보람을 느낍니다. 동료의 행복이 곧 나의 일터 내 존재 가치임을 믿습니다.
+                                </p>
                             </div>
 
-                            <div class="mt-6 pt-6 border-t border-kakao-border text-center">
-                                <p class="text-xs italic text-gray-300">
-                                    "동료의 성장과 행복에서 최고의 자아효능감을 발견합니다."
+                            <div class="p-4 rounded-2xl bg-black/40 border border-kakao-border">
+                                <h4 class="text-white font-bold mb-1 flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-dot text-kakao-yellow text-xs"></i>
+                                    모든 동료를 롤모델 삼아 배우는 성실함
+                                </h4>
+                                <p class="text-gray-400 text-xs pl-4">
+                                    자신의 자리에서 묵묵히 책임을 다하는 모든 크루와 임직원들의 모습에서 배움을 얻으며, 겸손함과 성실함으로 신뢰받는 멘토가 되고자 합니다.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section 1: About & Vision (요청 사진 및 노란 박스 삭제 반영) -->
-    <section id="about" class="py-24 bg-kakao-dark border-t border-kakao-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-kakao-yellow font-bold text-sm tracking-wider uppercase bg-kakao-yellow/10 border border-kakao-yellow/30 px-4 py-1.5 rounded-full">Section 01</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
-                    세심한 관찰과 선도적 역할로 이끄는<br class="hidden sm:inline"> <span class="text-kakao-yellow">포용적 직장 문화</span>
-                </h2>
-                <div class="w-16 h-1 bg-kakao-yellow mx-auto my-6 rounded-full"></div>
-            </div>
-
-            <div class="max-w-4xl mx-auto space-y-8 bg-kakao-card p-8 sm:p-12 rounded-3xl border border-kakao-border">
-                <div class="space-y-6 text-center sm:text-left">
-                    <h3 class="text-2xl sm:text-3xl font-bold text-white leading-snug">
-                        성장을 돕는 멘토로서의 3년 여정
-                    </h3>
-                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
-                       장애사원 크루가 일터에서 온전하고 자신감 넘치는 구성원으로 적응하도록 돕습니다.
-                    </p>
-                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
-                        크루 한 사람 한 사람의 눈높이에 맞춘 소통으로 두터운 라포(Rapport)를 형성하고, 기본 직장 예절부터 자립적 업무 수행까지 크루들의 다채로운 가능성을 함께 펼쳐가고 있습니다.
-                    </p>
-
-                    <div class="pt-4 grid sm:grid-cols-3 gap-4 border-t border-kakao-border pt-6">
-                        <div class="flex items-center gap-3">
-                            <div class="w-6 h-6 rounded-full bg-kakao-yellow text-black flex items-center justify-center shrink-0 font-bold">
-                                <i class="fa-solid fa-check text-xs"></i>
-                            </div>
-                            <span class="text-gray-200 font-medium text-sm">섬세한 코칭</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-6 h-6 rounded-full bg-kakao-yellow text-black flex items-center justify-center shrink-0 font-bold">
-                                <i class="fa-solid fa-check text-xs"></i>
-                            </div>
-                            <span class="text-gray-200 font-medium text-sm">맞춤형 루틴 지원</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-6 h-6 rounded-full bg-kakao-yellow text-black flex items-center justify-center shrink-0 font-bold">
-                                <i class="fa-solid fa-check text-xs"></i>
-                            </div>
-                            <span class="text-gray-200 font-medium text-sm">상호 존중 가치 확산</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 01-1: 근무 이력 & 담당 업무 -->
-    <section id="experience" class="py-24 bg-black border-t border-kakao-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-kakao-yellow font-bold text-sm tracking-wider uppercase bg-kakao-card border border-kakao-border px-4 py-1.5 rounded-full shadow-sm">Experience</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
-                    근무 이력 & <span class="text-kakao-yellow">담당 업무</span>
-                </h2>
-                <p class="text-gray-400 text-lg mt-3">사회적 약자에 대한 깊은 이해와 현장 케어 역량을 다져온 실무 경력입니다.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-kakao-card rounded-3xl p-8 border border-kakao-border hover:border-kakao-yellow/40 transition duration-300 relative overflow-hidden flex flex-col justify-between">
+                <!-- Vision Card (단기 & 장기 비전) -->
+                <div class="bg-kakao-card rounded-3xl p-8 sm:p-10 border border-kakao-border space-y-6 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-kakao-yellow/10 text-kakao-yellow border border-kakao-yellow/20">6개월 근무</span>
-                            <i class="fa-solid fa-hands-holding-child text-kakao-yellow text-2xl"></i>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-kakao-yellow text-black flex items-center justify-center text-xl font-black shrink-0">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">단계별 성장 비전</h3>
+                                <p class="text-xs text-gray-400 mt-0.5">주도적 역할 확장을 통한 체계적 도약 로드맵</p>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-2">노인주간보호센터</h3>
-                        <p class="text-sm text-gray-400 mb-6">치매 어르신 대상 전문 케어 및 맞춤형 프로그램 운영</p>
-                        
-                        <ul class="space-y-4 text-sm text-gray-300">
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-kakao-yellow mt-1 shrink-0"></i>
-                                <div>
-                                    <strong class="text-white block">인지·신체 맞춤형 프로그램 기획 및 진행</strong>
-                                    치매 어르신의 기능 향상과 심리적 안정을 위한 교육·재활 프로그램 기획 및 현장 운영
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-kakao-yellow mt-1 shrink-0"></i>
-                                <div>
-                                    <strong class="text-white block">사례관리 및 심층 면담</strong>
-                                    어르신 개별 상태 및 욕구를 세심하게 파악하여 지속 소통 기반의 케어 방향 수립
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-kakao-yellow mt-1 shrink-0"></i>
-                                <div>
-                                    <strong class="text-white block">외부 행사 안전 인솔</strong>
-                                    철저한 안전 수칙 준수와 밀착 케어로 어르신의 외부 활동 안전 인솔 완수
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="bg-kakao-card rounded-3xl p-8 border border-kakao-border hover:border-kakao-yellow/40 transition duration-300 relative overflow-hidden flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-kakao-yellow/10 text-kakao-yellow border border-kakao-yellow/20">9개월 근무</span>
-                            <i class="fa-solid fa-mug-hot text-kakao-yellow text-2xl"></i>
+                        <div class="space-y-6">
+                            <!-- 단기 목표 -->
+                            <div class="relative pl-6 border-l-2 border-kakao-yellow space-y-2">
+                                <span class="px-2.5 py-0.5 rounded text-[11px] font-black bg-kakao-yellow text-black uppercase tracking-wider">Short-term Goal</span>
+                                <h4 class="text-base font-bold text-white">
+                                    문화·프로세스 신속 적응 & 밀착 라포 형성
+                                </h4>
+                                <p class="text-xs text-gray-300 leading-relaxed">
+                                    파트의 업무 프로세스를 완벽히 숙지함과 동시에, 개별 크루들과 세심한 일대일 소통 및 회식·친목 활동을 통해 단단한 라포(Rapport)를 형성하겠습니다. 이를 통해 기본 근태 지도를 안정화하고 완벽한 스낵 큐레이션 및 크루 케어를 달성하겠습니다.
+                                </p>
+                            </div>
+
+                            <!-- 장기 목표 -->
+                            <div class="relative pl-6 border-l-2 border-gray-600 space-y-2">
+                                <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-zinc-800 text-gray-300 border border-kakao-border uppercase tracking-wider">Long-term Goal</span>
+                                <h4 class="text-base font-bold text-white">
+                                    사내 포용 문화 및 행사 기획 전문가로 도약
+                                </h4>
+                                <p class="text-xs text-gray-300 leading-relaxed">
+                                    과거 노인주간보호센터 외부 행사 인솔 경험과 사내 친목 모임 주도 노하우를 결합하여, 사내 행사 및 조직 프로젝트에 주도적으로 참여하겠습니다. 파트를 넘어 링키지랩 전체의 포용적 가치와 신뢰 문화를 널리 알리고 확장하는 핵심 인재로 도약하겠습니다.
+                                </p>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-2">하누리</h3>
-                        <p class="text-xs text-gray-400 mb-6">LG전자 자회사형 장애인 표준사업장</p>
-                        
-                        <ul class="space-y-4 text-sm text-gray-300">
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-kakao-yellow mt-1 shrink-0"></i>
-                                <div>
-                                    <strong class="text-white block">사내 카페 실무 및 장애사원 지도</strong>
-                                    바리스타 업무 수행, 음료 제조, 위생 및 설비 이슈 관리, 고객 응대
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-kakao-yellow mt-1 shrink-0"></i>
-                                <div>
-                                    <strong class="text-white block">포용적 소통 및 현장 교육</strong>
-                                    발달장애 사원의 근태 관리 및 눈높이에 맞춘 직무·예절 교육 노하우 체득
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-kakao-yellow mt-1 shrink-0"></i>
-                                <div>
-                                    <strong class="text-white block">서비스 & 위생 마인드 함양</strong>
-                                    높은 수준의 고객 응대 매너와 체계적인 위생 관리를 통해 철저한 실무 태도 정립
-                                </div>
-                            </li>
-                        </ul>
+                    </div>
+
+                    <!-- Vision Summary Tag -->
+                    <div class="pt-4 border-t border-kakao-border">
+                        <div class="p-3.5 rounded-xl bg-black/60 border border-kakao-yellow/20 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-gray-300">최종 지향점</span>
+                            <span class="text-xs font-extrabold text-kakao-yellow">링키지랩 사내 포용 문화 리더</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Section 01-2: MBTI & 성격의 장단점 -->
-    <section id="mbti" class="py-24 bg-kakao-dark border-t border-kakao-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-kakao-yellow font-bold text-sm tracking-wider uppercase bg-kakao-yellow/10 border border-kakao-yellow/30 px-4 py-1.5 rounded-full">Personality</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
-                    MBTI & <span class="text-kakao-yellow">성격의 장단점</span>
-                </h2>
-                <p class="text-gray-400 text-lg mt-3">공감과 신중함을 바탕으로 조직에 온기를 더하는 인재입니다.</p>
-            </div>
-
-            <div class="bg-black rounded-3xl p-8 mb-8 border border-kakao-yellow/30 text-center relative overflow-hidden">
-                <div class="inline-block px-4 py-1 bg-kakao-yellow text-black font-black text-xs rounded-full mb-3 uppercase tracking-wider">Personality Type</div>
-                <h3 class="text-3xl sm:text-4xl font-black text-white mb-2">ISFP</h3>
-                <p class="text-kakao-yellow font-bold text-lg">"따뜻한 공감 능력을 가진 세심한 현장 전문가"</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-kakao-card rounded-3xl p-8 border border-kakao-border">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-10 h-10 rounded-xl bg-kakao-yellow text-black flex items-center justify-center font-bold text-lg">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white">장점 | 따뜻한 공감과 세심한 적응력</h3>
-                    </div>
-                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
-                        타인의 감정과 상태를 기민하게 파악하는 깊은 공감 능력을 갖추고 있습니다. 상대방의 상황과 눈높이에 맞춘 세심한 케어와 유연한 태도로 현장에 빠르게 적응하며 온화한 팀워크 분위기를 조성합니다.
-                    </p>
-                    <div class="p-4 rounded-2xl bg-black/50 border border-kakao-border">
-                        <span class="text-xs font-bold text-kakao-yellow block mb-1">핵심 시너지</span>
-                        <p class="text-xs text-gray-400">조직 내 심리적 안정감을 형성하고 구성원 간 갈등을 완화시키는 긍정적 영향력 발휘</p>
-                    </div>
-                </div>
-
-                <div class="bg-kakao-card rounded-3xl p-8 border border-kakao-border">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-10 h-10 rounded-xl bg-kakao-yellow text-black flex items-center justify-center font-bold text-lg">
-                            <i class="fa-solid fa-sliders"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white">보완점 & 개선 노력 | 신중함의 체계화</h3>
-                    </div>
-                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
-                        상대방을 배려하고 상황을 신중하게 고민하다 보니 결정을 내리거나 생소한 업무에 임할 때 사전 검토 시간이 다소 소요될 수 있습니다.
-                    </p>
-                    <div class="p-4 rounded-2xl bg-black/50 border border-kakao-border space-y-2">
-                        <span class="text-xs font-bold text-kakao-yellow block">개선 방향</span>
-                        <p class="text-xs text-gray-300">
-                            • <strong>‘명확한 우선순위 리스트’</strong> 작성 및 판단 가이드라인 수립으로 빠른 실행력 도모
-                        </p>
-                        <p class="text-xs text-gray-300">
-                            • 철저한 사전 조사와 단계별 실천 계획으로 주도적 업무 수행력 강화
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 2: Core Competencies -->
-    <section id="competencies" class="py-24 bg-black border-y border-kakao-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-kakao-yellow font-bold text-sm tracking-wider uppercase bg-kakao-card border border-kakao-border px-4 py-1.5 rounded-full shadow-sm">Core Skills</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
-                    Lyndsey의 <span class="text-kakao-yellow">핵심 역량</span>
-                </h2>
-                <p class="text-gray-400 text-lg mt-3">진정성 있는 멘토링과 효율적인 직무 수행을 뒷받침하는 차별화된 역량입니다.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-kakao-card rounded-2xl p-8 border border-kakao-border hover:border-kakao-yellow/50 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-xl bg-kakao-yellow text-black flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition duration-300">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">공감과 세심한 관찰</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">
-                        크루 개개인의 특성과 정서적 변화를 기민하게 파악하여, 안정적인 일상 유지와 안심할 수 있는 근무 환경을 유도하는 세심한 멘토링을 제공합니다.
-                    </p>
-                </div>
-
-                <div class="bg-kakao-card rounded-2xl p-8 border border-kakao-border hover:border-kakao-yellow/50 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-xl bg-kakao-yellow text-black flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition duration-300">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">직장 예절 선도</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">
-                        근태 관리, 업무 태도, 소통 매너 등 직장생활의 기본 수칙을 맞춤형 체크리스트 및 1:1 반복 교육을 통해 체득시키고 안정적인 근태를 만들어 왔습니다.
-                    </p>
-                </div>
-
-                <div class="bg-kakao-card rounded-2xl p-8 border border-kakao-border hover:border-kakao-yellow/50 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-xl bg-kakao-yellow text-black flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition duration-300">
-                        <i class="fa-solid fa-cookie-bite"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">오픈멤버로서</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">
-                        3년 간 쌓아온 현장 업무의 노하우로 효율적인 백오피스 업무 및 업무환경개선을 위해 노력하였습니다.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 3: Strengths & Case Study -->
-    <section id="casestudy" class="py-24 bg-kakao-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-kakao-yellow font-bold text-sm tracking-wider uppercase bg-kakao-yellow/10 border border-kakao-yellow/30 px-4 py-1.5 rounded-full">Section 02</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
-                    강점 & <span class="text-kakao-yellow">행동 변화 사례</span>
-                </h2>
-                <p class="text-gray-400 text-lg mt-3">일상 속 정서적 교류로 쌓아올린 두터운 라포(Rapport)와 코칭 성과</p>
-            </div>
-
-            <!-- 회식 사진 4장 (dinner1.jpg~dinner4.jpg) -->
-            <div class="bg-kakao-card rounded-3xl p-8 sm:p-10 border border-kakao-border mb-12">
-                <div class="max-w-3xl mb-8">
-                    <span class="text-xs font-extrabold text-kakao-yellow bg-kakao-yellow/10 border border-kakao-yellow/20 px-3 py-1 rounded-full uppercase">Rapport Building</span>
-                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-3 mb-4">
-                        일상과 식사 자리를 함께하며 쌓아가는 깊은 신뢰
-                    </h3>
-                    <p class="text-gray-300 text-base leading-relaxed">
-                        업무 시간에만 머무르지 않고 회식과 친목 자리에 적극적으로 참여하며 장애사원 크루들과 자연스럽게 눈높이를 맞췄습니다. 
-                        함께 식사하고 이야기를 나누는 과정을 통해 크루 개개인의 가치관, 성향, 말치 못한 고충까지 세심하게 이해할 수 있었고, 
-                        이렇게 형성된 단단한 라포(Rapport)는 현장에서의 신뢰감 있는 코칭과 성장의 가장 강력한 밑바탕이 되었습니다.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div class="rounded-2xl overflow-hidden border border-kakao-border h-48 sm:h-60 group">
-                        <img src="dinner1.jpg" alt="크루들과의 회식 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="rounded-2xl overflow-hidden border border-kakao-border h-48 sm:h-60 group">
-                        <img src="dinner2.jpg" alt="크루들과의 회식 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="rounded-2xl overflow-hidden border border-kakao-border h-48 sm:h-60 group">
-                        <img src="dinner3.jpg" alt="크루들과의 회식 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="rounded-2xl overflow-hidden border border-kakao-border h-48 sm:h-60 group">
-                        <img src="dinner4.jpg" alt="크루들과의 회식 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-5 bg-black rounded-3xl p-8 sm:p-10 text-white shadow-xl border border-kakao-yellow/30 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 bg-kakao-yellow/10 rounded-full blur-2xl"></div>
-                    
-                    <span class="inline-block text-xs font-semibold uppercase tracking-widest text-kakao-yellow mb-2">Key Metric</span>
-                    <div class="text-6xl sm:text-7xl font-black text-kakao-yellow mb-2">
-                        100%
-                    </div>
-                    <div class="text-xl font-bold text-white mb-6">
-                        크루 직장 적응 완수
-                    </div>
-
-                    <p class="text-gray-300 text-sm leading-relaxed mb-6">
-                        체크리스트 기반의 반복 교육과 깊은 라포 형성을 통해, 초기 업무 이탈 위험이 있던 크루가 조직에 안정적으로 적응하여 주도적인 직장생활을 이어가게 되었습니다.
-                    </p>
-
-                    <div class="pt-6 border-t border-kakao-border flex items-center gap-3">
-                        <i class="fa-solid fa-circle-check text-kakao-yellow text-xl"></i>
-                        <span class="text-xs text-gray-300 font-medium">단순한 업무 지도를 넘어 한 사람의 완전한 자립 달성</span>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="bg-kakao-card p-6 sm:p-8 rounded-2xl border border-kakao-border space-y-4">
-                        <h3 class="text-2xl font-bold text-white flex items-center gap-3">
-                            <span class="w-8 h-8 rounded-lg bg-kakao-yellow text-black flex items-center justify-center text-sm font-bold">1</span>
-                            기민한 이슈 캐치
-                        </h3>
-                        <p class="text-gray-300 text-base leading-relaxed pl-11">
-                            평소 두터운 신뢰관계를 기반으로 크루의 업무 내외적 고충과 변화를 사전에 감지하고 세심하게 케어합니다.
-                        </p>
-                    </div>
-
-                    <div class="bg-kakao-card p-6 sm:p-8 rounded-2xl border border-kakao-border space-y-4">
-                        <h3 class="text-2xl font-bold text-white flex items-center gap-3">
-                            <span class="w-8 h-8 rounded-lg bg-kakao-yellow text-black flex items-center justify-center text-sm font-bold">2</span>
-                            맞춤형 업무 루틴 설계
-                        </h3>
-                        <p class="text-gray-300 text-base leading-relaxed pl-11">
-                            지각과 업무 이탈이 잦던 크루에게 개인 맞춤형 체크리스트와 직관적인 동작 루틴을 수립해 주었습니다.
-                        </p>
-                    </div>
-
-                    <div class="bg-kakao-card p-6 sm:p-8 rounded-2xl border border-kakao-border space-y-4">
-                        <h3 class="text-2xl font-bold text-white flex items-center gap-3">
-                            <span class="w-8 h-8 rounded-lg bg-kakao-yellow text-black flex items-center justify-center text-sm font-bold">3</span>
-                            지속적인 태도 교육
-                        </h3>
-                        <p class="text-gray-300 text-base leading-relaxed pl-11">
-                            직장 예절 수칙에 대한 지속적이고 긍정적인 가이드를 제공함으로써, 스스로 근태를 지키는 주도적인 변화를 이끌어냈습니다.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 4: Key Achievements -->
-    <section id="achievements" class="py-24 bg-black text-white relative overflow-hidden border-t border-kakao-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-black font-bold text-sm tracking-wider uppercase bg-kakao-yellow px-4 py-1.5 rounded-full">Section 03</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
-                    주요 성과: <span class="text-kakao-yellow">수도권 기능경기대회 동메달 수상</span> 지원
-                </h2>
-                <div class="w-16 h-1 bg-kakao-yellow mx-auto my-6 rounded-full"></div>
-            </div>
-
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-6 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-kakao-yellow/20 text-kakao-yellow text-xs font-bold border border-kakao-yellow/30">
-                        <i class="fa-solid fa-award"></i> 샘의 수도권장애인기능경기대회 결실
-                    </div>
-                    <h3 class="text-2xl sm:text-3xl font-extrabold leading-snug">
-                        함께 이뤄낸 뜻깊은 동반 성장
-                    </h3>
-                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
-                        직장예절을 직접 코칭한 장애사원 크루(샘)가 수도권장애인기능경기대회에 도전하여 <strong class="text-kakao-yellow font-bold">동메달 수상</strong>이라는 감동적인 결실을 거두었습니다.
-                    </p>
-                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
-                        개개인의 숨은 잠재력을 믿고 이끌어낸 헌신적인 서포트와 끈기 있는 맞춤형 연습으로 이러한 쾌거를 이루었습니다.
-                    </p>
-
-                    <div class="p-6 bg-kakao-card border border-kakao-border rounded-2xl flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-kakao-yellow text-black flex items-center justify-center text-2xl shrink-0 font-bold">
-                            <i class="fa-solid fa-medal"></i>
-                        </div>
-                        <div>
-                            <div class="text-sm font-bold text-white">잠재력 개화 & 성장의 보람</div>
-                            <div class="text-xs text-gray-400 mt-0.5">서로에 대한 깊은 신뢰와 맞춤 훈련의 결실</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 기능경기대회 사진 (award.png) -->
-                <div class="lg:col-span-6">
-                    <div class="rounded-3xl overflow-hidden border border-kakao-border shadow-2xl relative">
-                        <img src="award.png" alt="수도권 장애인 기능경기대회 출전 기념" class="w-full h-80 sm:h-96 object-cover opacity-90 hover:opacity-100 transition duration-300">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 5: Values & Future Vision -->
-    <section id="future" class="py-24 bg-kakao-dark border-t border-kakao-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-kakao-yellow font-bold text-sm tracking-wider uppercase bg-kakao-card border border-kakao-border px-4 py-1.5 rounded-full shadow-sm">Values & Future</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
-                    직업 가치관 & <span class="text-kakao-yellow">앞으로의 비전</span>
-                </h2>
-                <p class="text-gray-400 text-lg mt-3">단단한 내실을 바탕으로 주도적 영향력을 확장해 나갑니다.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-kakao-card rounded-3xl p-8 sm:p-10 border border-kakao-border space-y-6">
-                    <div class="w-12 h-12 rounded-2xl bg-kakao-yellow text-black flex items-center justify-center text-xl font-black">
-                        <i class="fa-solid fa-user-group"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white">롤모델</h3>
-                    <ul class="space-y-4 text-gray-300">
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-dot text-kakao-yellow text-sm mt-1"></i>
-                            <span>상호 존중을 바탕으로 소외되는 크루가 없는 포용적 근무 환경을 지향합니다.</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-dot text-kakao-yellow text-sm mt-1"></i>
-                            <span>동료가 일터에서 보람과 행복을 느끼는 모습에서 스스로 큰 자아효능감을 찾습니다.</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-dot text-kakao-yellow text-sm mt-1"></i>
-                            <span>자신의 자리에서 성실하게 최선을 다하는 모든 동료들을 롤모델 삼아 배웁니다.</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="bg-kakao-card rounded-3xl p-8 sm:p-10 border border-kakao-border space-y-6">
-                    <div class="w-12 h-12 rounded-2xl bg-kakao-yellow text-black flex items-center justify-center text-xl font-black">
-                        <i class="fa-solid fa-arrow-trend-up"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white">앞으로의 성장 비전</h3>
-                    <ul class="space-y-4 text-gray-300">
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-dot text-kakao-yellow text-sm mt-1"></i>
-                            <span>선임 크루로서 멘토링 노하우를 신규 크루에게 공유하며 파트의 내실을 단단히 구축하겠습니다.</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-dot text-kakao-yellow text-sm mt-1"></i>
-                            <span>향후 주어진 업무에만 최선을 다하는 것이 아니라 적극적으로 사내 행사 및 조직 프로젝트에 참여하겠습니다.</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-dot text-kakao-yellow text-sm mt-1"></i>
-                            <span>파트를 넘어 회사 전체의 포용적 가치와 신뢰 문화를 일구는 핵심 인재로 도약하겠습니다.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer / Contact Section -->
-    <footer id="contact" class="bg-black text-gray-400 py-16 border-t border-kakao-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-            <div class="space-y-3">
-                <h3 class="text-2xl font-extrabold text-white">Lyndsey.r | Linkage Lab</h3>
-                <p class="text-gray-400 text-sm max-w-md mx-auto">
-                    장애사원과의 건강한 공존과 성장을 이끄는 멘토형 스낵 큐레이터
-                </p>
-            </div>
-
-            <div class="pt-6 border-t border-kakao-border text-xs text-gray-500">
-                &copy; Lyndsey.r Personal Branding Report. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
-    <!-- Mobile menu toggle script -->
-    <script>
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
-            });
-        });
-    </script>
-</body>
-</html>
